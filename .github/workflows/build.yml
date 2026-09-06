@@ -14,7 +14,7 @@ jobs:
 
       - name: Unpack source project
         run: |
-          unzip -q WhatsAppFloatingPill_GitHub_CloudBuild_Pack_v4.1.zip -d pack
+          unzip -q WhatsAppFloatingPill_GitHub_CloudBuild_Pack.zip -d pack
           unzip -q pack/WhatsAppFloatingPill_Source_CloudBuild_v4.1.zip -d .
           test -f settings.gradle
           test -f app/build.gradle
