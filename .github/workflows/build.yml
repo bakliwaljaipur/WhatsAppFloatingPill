@@ -14,7 +14,7 @@ jobs:
 
       - name: Unpack source project
         run: |
-          unzip -q WhatsAppFloatingPill_GitHub_CloudBuild_Pack.zip -d pack
+          unzip -q WhatsAppFloatingPill_GitHub_CloudBuild_Pack.bin -d pack
           SOURCE_ZIP=$(find pack -maxdepth 1 -type f -name 'WhatsAppFloatingPill_Source_CloudBuild_*.zip' | head -n 1)
           test -n "$SOURCE_ZIP"
           unzip -q "$SOURCE_ZIP" -d .
